@@ -1,0 +1,6 @@
+Cat = type("Cat",(),{"name":"tom","show":show})
+def show(self):
+    print("dasb")
+cat = Cat()
+cat.show()
+

@@ -1,0 +1,9 @@
+from socket import *
+
+#创建udp
+s = socket(AF_INET,SOCK_DGRAM)
+s.sendto("hehe".encode("gb2312"),("192.168.19.119",8080))
+while True:
+    a = s.recvfrom(1024)
+    print(a.Unicode)
+s.close()
